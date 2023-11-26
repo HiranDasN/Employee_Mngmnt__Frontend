@@ -49,48 +49,51 @@ function Home() {
 
             <div className='container-fluid mt-5 p-3' style={{ backgroundColor: '#1e253e' }}>
                 <div className='ms-5 '>
-                    <h1 style={{ color: '#fff' }}>Effective space planning<span style={{ fontWeight: 'bold', color: 'green' }}>.</span></h1>
+                    <h1 style={{ color: '#fff' }}>
+                        Effective space planning<span style={{ fontWeight: 'bold', color: 'green' }}>.</span>
+                    </h1>
                     <p style={{ color: '#fff' }}>Enable administrators to configure the rules around workspace booking using our space planning portal:</p>
                 </div>
 
-                <div className="row ms-5">
-                    <div className="col-md-6 mt-4">
-                        <div class="card" style={{ width: '40rem', background: 'rgba(255, 255, 255, 0.5)' }}>
-                            <div class="card-body">
+                <div className="row ">
+                    <div className="col-lg-0 col-md-12 mt-4"></div>
+                    <div className="col-lg-6 col-md-12 mt-4">
+                        <div className="card" style={{ width: '100%', background: 'rgba(255, 255, 255, 0.5)' }}>
+                            <div className="card-body">
                                 <img width={'100%'} src="https://www.afreespace.com/wp-content/uploads/2023/11/Demand-Final-1.jpg" alt="" />
                                 <h3 className='text-white mt-2'>Demand.</h3>
-                                <p className='text-white '>Set attendance rules, embed organisational policies and set workspace allocation priorities.</p>
+                                <p className='text-white fs-5 '>Set attendance rules, embed organizational policies and set workspace allocation priorities.</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 mt-4">
-                        <div class="card" style={{ width: '40rem', background: 'rgba(255, 255, 255, 0.5)' }}>
-                            <div class="card-body">
+                    <div className="col-lg-6 col-md-12 mt-4 ">
+                        <div className="card" style={{ width: '100%', background: 'rgba(255, 255, 255, 0.5)' }}>
+                            <div className="card-body">
                                 <img width={'100%'} src="https://www.afreespace.com/wp-content/uploads/2023/11/Capacity-Final-1.jpg" alt="" />
                                 <h3 className='text-white mt-2'>Capacity.</h3>
-                                <p className='text-white '>Set the status of bookable spaces and manage space for desk, department and zones, priorities.</p>
-
+                                <p className='text-white fs-5 '>Set the status of bookable spaces and manage space for desk, department and zones.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="row ms-5">
-                    <div className="col-md-3"></div>
 
-                    <div className="col-md-6 mt-4">
-                        <div class="card" style={{ width: '40rem', background: 'rgba(255, 255, 255, 0.5)' }}>
-                            <div class="card-body">
+                </div>
+
+                <div className="row ">
+                    <div className="col-lg-3 col-md-12"></div>
+                    <div className="col-lg-6 col-md-12 mt-4">
+                        <div className="card" style={{ width: '100%', background: 'rgba(255, 255, 255, 0.5)' }}>
+                            <div className="card-body">
                                 <img width={'100%'} src="https://www.afreespace.com/wp-content/uploads/2023/11/Users-Final-1.jpg" alt="" />
                                 <h3 className='text-white mt-2'>Users.</h3>
-                                <p className='text-white '>Create user profiles, assign users to teams and set personal preferences.</p>
+                                <p className='text-white fs-5'>Create user profiles, assign users to teams and set personal preferences.</p>
                             </div>
                         </div>
                     </div>
+                    <div className="col-lg-3 col-md-12">
 
-                    <div className="col-md-3"></div>
+                    </div>
+                    <h4 className='text-white text-center mt-3'>Incorporate employee preferences including assigned, preferred spaces (including locations near a window or with specific equipment) or spaces in their own department</h4>
                 </div>
-                <h5 className='text-white text-center mt-3'>Incorporate employee preferences including assigned, preferred spaces (including locations near a window or with specific equipment) or spaces in their own department</h5>
-
             </div>
 
             <div className='container mt-5'>
@@ -110,36 +113,51 @@ function Home() {
             </div>
 
             <div className="container border border-2 rounded border-secondary p-5 mt-5 mb-5 bg-dark">
-      <div className="row">
-        <div className="col-lg-6">
-          <h1 className='text-primary mb-4'>Employee Success</h1>
-          <div className="card mb-3">
-            <div className="card-body">
-              <p className='fs-5 fw-bolder'>IT Field:</p>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat optio quia suscipit totam laborum atque soluta fuga? Culpa minima cum dolore dolorum labore obcaecati laudantium deserunt magnam saepe enim?</p>
-            </div>
-          </div>
-          <div className="card mb-3">
-            <div className="card-body">
-              <p className='fs-5 fw-bolder'>Business Field:</p>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat optio quia suscipit totam laborum atque soluta fuga? Culpa minima cum dolore dolorum labore obcaecati laudantium deserunt magnam saepe enim?</p>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-body">
-              <p className='fs-5 fw-bolder'>Industry Field:</p>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat optio quia suscipit totam laborum atque soluta fuga? Culpa minima cum dolore dolorum labore obcaecati laudantium deserunt magnam saepe enim?</p>
-            </div>
-          </div>
-        </div>
+                <div className="row">
+                    <div className="col-lg-6">
+                        <h1 className="text-info mb-4">Employee Success</h1>
+                        <div className="card mb-3 shadow">
+                            <div className="card-body">
+                                <h5 className="card-title fs-5 fw-bolder text-info">IT Field:</h5>
+                                <p className="card-text text-muted">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Asperiores fugiat optio quia suscipit totam laborum atque soluta
+                                    fuga? Culpa minima cum dolore dolorum labore obcaecati laudantium
+                                    deserunt magnam saepe enim?
+                                </p>
+                            </div>
+                        </div>
+                        <div className="card mb-3 shadow">
+                            <div className="card-body">
+                                <h5 className="card-title fs-5 fw-bolder text-info">Business Field:</h5>
+                                <p className="card-text text-muted">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Asperiores fugiat optio quia suscipit totam laborum atque soluta
+                                    fuga? Culpa minima cum dolore dolorum labore obcaecati laudantium
+                                    deserunt magnam saepe enim?
+                                </p>
+                            </div>
+                        </div>
+                        <div className="card shadow">
+                            <div className="card-body">
+                                <h5 className="card-title fs-5 fw-bolder text-info">Industry Field:</h5>
+                                <p className="card-text text-muted">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Asperiores fugiat optio quia suscipit totam laborum atque soluta
+                                    fuga? Culpa minima cum dolore dolorum labore obcaecati laudantium
+                                    deserunt magnam saepe enim?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-        <div className="col-lg-6 mt-5">
-          <div className="mt-5">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/qOp4Y2_g5ZI" title="The Secret To Success - an eye opening story" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
+                    <div className="col-lg-6 mt-5">
+                        <div className="mt-5">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/yRPTQTlafxw" title="office work - (Copyright free footage HD)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </>
     )

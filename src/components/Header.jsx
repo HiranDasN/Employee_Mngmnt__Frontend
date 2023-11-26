@@ -15,8 +15,9 @@ function Header() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto">
           <Nav.Link href="/" style={{ fontSize: "15px", marginLeft: '15px', fontWeight: 'bold', color: '#fff' }}>HOME</Nav.Link>
-          <Nav.Link href="/employee" style={{ fontSize: "15px", marginLeft: '15px', fontWeight: 'bold', color: '#fff' }}>EMPLOYEE</Nav.Link>
+          <Nav.Link href="/employee" style={{ fontSize: "15px", marginLeft: '10px', fontWeight: 'bold', color: '#fff' }}>EMPLOYEE</Nav.Link>
           <Nav.Link href="/contact" style={{ fontSize: "15px", marginLeft: '15px', fontWeight: 'bold', color: '#fff' }}>CONTACT</Nav.Link>
+          <Nav.Link href="" style={{ fontSize: "15px", marginLeft: '25px', fontWeight: 'bold', color: '#fff' }}></Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

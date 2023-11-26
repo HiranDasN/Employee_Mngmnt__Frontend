@@ -3,8 +3,8 @@ import React from 'react'
 function Footer() {
     return (
         <>
-            <footer className="bg-dark text-light py-5">
-                <div className="container mt-3">
+            <footer className="bg-dark text-light py-5 ">
+                <div className="container mt-3 ">
                     <div className="row">
                         <div className="col-md-3">
                             <h5 className='fw-bolder fs-3'>EngageWith</h5>

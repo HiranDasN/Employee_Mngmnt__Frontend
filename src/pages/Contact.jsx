@@ -43,7 +43,7 @@ function Contact() {
                                         <Form.Control as="textarea" placeholder="Enter Message" />
                                     </Form.Group>
                                     <div className='text-center'>
-                                        <button className='btn btn-warning mt-3'>Submit</button>
+                                        <button className='btn btn-primary mt-3'>Submit</button>
                                     </div>
                                 </Form>
                             </Card.Body>
