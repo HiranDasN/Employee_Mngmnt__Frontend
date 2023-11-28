@@ -6,7 +6,6 @@ import ListEmployee from '../components/ListEmployee'
 function Employee() {
     const [uploadStatus, setUploadStatus] = useState({})
 
-    
     return (
         <>
             <div className="container-fluid mt-5">
@@ -23,6 +22,7 @@ function Employee() {
                 </div>
             </div>
 
+{/* employee */}
             <div className='container-fluid mt-5'>
                 <div className='text-center'>
                     <h1 className='fw-bolder' style={{ fontSize: '40px' }}>Employees</h1>

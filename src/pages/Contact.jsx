@@ -43,13 +43,13 @@ function Contact() {
                         <div className='col-md-2'></div>
     
                         <div className="col-md-4 ">
-                            <img src="https://th.bing.com/th/id/OIP.WvBbXywMTA6GzPBFc5T7yAHaHc?w=520&h=523&rs=1&pid=ImgDetMain" width={'100%'} height={'400px'} alt="" />
+                            <img src="https://cdn.pixabay.com/photo/2023/07/04/19/43/man-8106958_1280.png" width={'100%'} height={'400px'} alt="" />
                       
                         </div>
 
                         
     
-                        <div className="col-md-4   border shadow  bg-transparent" style={{backgroundImage:'https://th.bing.com/th/id/OIP.7qCRjA0qWwBSMabq0wtp0AAAAA?rs=1&pid=ImgDetMain'}}>
+                        <div className="col-md-4   border shadow  bg-transparent" >
                             <h4 className="mb-4 text-center mt-2">Any Queries</h4>
                             <Card className="bg-transparent text-light w-100 mb-4 no-hover-effect">
                                 <Card.Body>

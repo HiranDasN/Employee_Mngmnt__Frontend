@@ -29,7 +29,6 @@ function AddEmploye({ setUploadStatus }) {
             toast.warning("please fill the form completely")
         }
         else {
-
             const response = await uploadEmployee(employee)
             if (response.status >= 200 && response.status < 300) {
                 setUploadStatus(response.data)
