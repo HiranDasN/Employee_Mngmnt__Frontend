@@ -4,14 +4,14 @@ function Footer() {
     return (
         <>
             <footer className="bg-dark text-light py-5 ">
-                <div className="container mt-3 ">
-                    <div className="row">
+                <div className="container text-center mt-3 ">
+                    <div className="row justify-content-center">
                         <div className="col-md-3">
                             <h5 className='fw-bolder fs-3'>EngageWith</h5>
                             <p>Follow us:</p>
-                            <ul className="list-unstyled d-flex">
-                                <li><i class="fa-brands fa-x-twitter fs-2 "></i></li>
-                                <li><i class="fa-brands fa-square-facebook fs-2 ms-3"></i></li>
+                            <ul className="list-unstyled d-flex justify-content-center ">
+                                <li><a href="" style={{textDecoration:'none',color:'white'}}><i class="fa-brands fa-x-twitter fs-2 "></i></a></li>
+                                <li><a href="" style={{textDecoration:'none',color:'white'}}><i class="fa-brands fa-square-facebook fs-2 ms-3"></i></a></li>
                             </ul>
                         </div>
 
@@ -19,7 +19,7 @@ function Footer() {
                             <h5 className='fw-bolder fs-3'>Resources</h5>
                             <ul className="list-unstyled">
                                 <li>News & insights</li>
-                                <li>Case studies</li>
+                                <li>Careers</li>
                                 <li>Events</li>
                               
                             </ul>
@@ -31,7 +31,7 @@ function Footer() {
                                 <li>About us</li>
                                 <li>Support</li>
                                 <li>Partners</li>
-                                <li>Careers</li>
+                                
                         
                             </ul>
                         </div>
@@ -44,13 +44,13 @@ function Footer() {
                                 <li>Terms of use</li>
                             </ul>
                         </div>
-
+<hr className='mt-3' />
                     </div>
                     <div className="row mt-4">
 
                         <div className="col-md-2"></div>
 
-                        <div className="col-md-8 text-center mt-3">
+                        <div className="col-md-8 text-center">
                             <p>&copy; 2023 EnageWith. All rights reserved.</p>
 
                         </div>

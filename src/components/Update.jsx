@@ -1,132 +1,84 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import { useEffect, useState } from 'react';
-
 import Form from 'react-bootstrap/Form';
+import { updateAnEmpDetails } from '../services/allAPI';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-function Update() {
+function Update({ display,setdepartmentStatus }) {
+
+
+    console.log(display);
+    const { id } = display
+    console.log(id);
+
+
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const [category, setCategory] = useState('');
+    console.log(category);
 
-    const [update,setUpdate] = useState({})
+    const handleAddCategory = async () => {
 
+        if (!category) {
+            toast.warning('Fill the form');
+        } else {
+            const body = {
+                ...display, category: category
+            };
+            const response = await updateAnEmpDetails(id, body);
+            console.log(response);
+            if (response.status >= 200 && response.status < 300) {
+                setdepartmentStatus(response.data)
+                toast.success('Department Uploaded Successfully');
+                handleClose();
+                console.log('');
+               
+            } else {
+                toast.error('Oops!.. Something went wrong.');
+            }
+        }
+    }
+    useEffect(() => {
+      
+    }, [])
 
     return (
         <>
-        <Button onClick={handleShow} variant="primary"><i class="fa-solid fa-pen"></i></Button>
 
-                <Modal
-                  show={show}
+            <Button onClick={handleShow} variant="primary"><i class="fa-solid fa-folder-plus"></i></Button>
+
+            <Modal
+                show={show}
                 onHide={handleClose}
                 backdrop="static"
                 keyboard={false}
-                size='lg'
-
+                centered
             >
                 <Modal.Header closeButton>
-                    <Modal.Title>Add Employee Details</Modal.Title>
+                    <Modal.Title ><i class="fa-solid fa-pencil me-2 text-success"></i>Add Department</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Form>
-                        <Form.Group  className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Control
-                                name='name'       
-                                type="text"
-                                placeholder="Enter Employee Name"
-                                value={update.Name}
-                                onChange={(e)=>setUpdate({...update,Name:e.target.value})}
-                            />
-                        </Form.Group>
-                        <Form.Group  className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Control
-                                name="email"
-                                type="text"
-                                placeholder="Enter Employee Email"
-                                value={update.Email}
-                                onChange={(e)=>setUpdate({...update,Email:e.target.value})}
-                            />
-                        </Form.Group>
-                        <Form.Group  className="mb-3">
-                            <Form.Label className='ms-3'>Gender</Form.Label>
-                            <div className='ms-3'>
-                                <Form.Check
-                                    inline
-                                    label="Male"
-                                    type="radio"
-                                    id="male"
-                                    value={'male'}
-                                    name="gender"
-                                />
-                                <Form.Check
-                                    inline
-                                    label="Female"
-                                    type="radio"
-                                    id="female"
-                                    value={'female'}
+                    <form className='p-3 rounded' >
 
-                                    name="gender"
-                                />
-                            </div>
+                        <Form.Group className='mb-3' controlId="validationCustom02">
+                            <Form.Control type="text" placeholder='Enter Department Name' onChange={(e) => setCategory(e.target.value)} />
                         </Form.Group>
-                        <Form.Group  className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Control
-                                name="dob"
-                                type="date"
-                                placeholder="Enter Date of birth"
-                                value={update.Dob}
-                                onChange={(e)=>setUpdate({...update,Dob:e.target.value})}
-                            />
-                        </Form.Group>
-                        <Form.Group  className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Control
-                                name="designation"
-                                type="text"
-                                placeholder="Enter Employee Designation"
-                                value={update.Designation}
-                                onChange={(e)=>setUpdate({...update,Designation:e.target.value})}
-                            />
-                        </Form.Group>
-                        <Form.Group  className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Control
-                                name="address"
-                                type="text"
-                                placeholder="Enter Address"
-                                value={update.Address}
-                                onChange={(e)=>setUpdate({...update,Address:e.target.value})}
-                            />
-                        </Form.Group>
-                        <Form.Group  className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Control
-                            name="phone"
-                                type="text"
-                                placeholder="Enter Phone Number"
-                                value={update.Phone}
-                                onChange={(e)=>setUpdate({...update,Phone:e.target.value})}
-                            />
-                        </Form.Group>
-                        <Form.Group  className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Control
-                                name="photourl"
-                                type="text"
-                                placeholder="Enter Employee Photo URL"
-                                value={update.PhotoUrl}
-                                onChange={(e)=>setUpdate({...update,PhotoUrl:e.target.value})}
-                            />
-                        </Form.Group>
-                    </Form>
 
+                    </form>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="danger" onClick={handleClose}>
-                        Close
+                    <Button variant="secondary" onClick={handleClose}>
+                        Cancel
                     </Button>
-                    <Button   variant="success">Upload</Button>
+                    <Button variant="success" onClick={handleAddCategory} >Add</Button>
                 </Modal.Footer>
-                </Modal>
-             
-       
+
+            </Modal>
+            <ToastContainer position='top-center' theme='colored' autoClose={2000} />
+
         </>
     )
 }

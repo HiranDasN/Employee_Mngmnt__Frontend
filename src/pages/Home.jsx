@@ -111,53 +111,24 @@ function Home() {
                 </div>
 
             </div>
-
-            <div className="container border border-2 rounded border-secondary p-5 mt-5 mb-5 bg-dark">
+            <div className='container mt-5 mb-5'>
                 <div className="row">
-                    <div className="col-lg-6">
-                        <h1 className="text-info mb-4">Employee Success</h1>
-                        <div className="card mb-3 shadow">
-                            <div className="card-body">
-                                <h5 className="card-title fs-5 fw-bolder text-info">IT Field:</h5>
-                                <p className="card-text text-muted">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Asperiores fugiat optio quia suscipit totam laborum atque soluta
-                                    fuga? Culpa minima cum dolore dolorum labore obcaecati laudantium
-                                    deserunt magnam saepe enim?
-                                </p>
-                            </div>
-                        </div>
-                        <div className="card mb-3 shadow">
-                            <div className="card-body">
-                                <h5 className="card-title fs-5 fw-bolder text-info">Business Field:</h5>
-                                <p className="card-text text-muted">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Asperiores fugiat optio quia suscipit totam laborum atque soluta
-                                    fuga? Culpa minima cum dolore dolorum labore obcaecati laudantium
-                                    deserunt magnam saepe enim?
-                                </p>
-                            </div>
-                        </div>
-                        <div className="card shadow">
-                            <div className="card-body">
-                                <h5 className="card-title fs-5 fw-bolder text-info">Industry Field:</h5>
-                                <p className="card-text text-muted">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Asperiores fugiat optio quia suscipit totam laborum atque soluta
-                                    fuga? Culpa minima cum dolore dolorum labore obcaecati laudantium
-                                    deserunt magnam saepe enim?
-                                </p>
-                            </div>
-                        </div>
+                    <div className="col-md-6 ">
+                    <h1 className='fw-bolder ' style={{ fontSize: '70px' }}>Our approach.</h1>
+
+                        <p className='fs-5 mt-3 '>We recognise the lack of human-centric intelligence around the use of workspaces has created a disconnect, between individual employees, their organisational culture and their workspace. This coupled with the switch to hybrid working has left many organisations with too much space and the wrong space types.</p>           
+                        <p className='fs-5 mt-5'>Our mission is ‘to empower the world’s largest businesses to achieve more, by reconnecting people, workspaces and activity’. </p>        
+                         </div>
+
+                    <div className="col-md-6 text-center mt-3">
+                    <iframe width="100%" height="360" src="https://www.youtube.com/embed/yRPTQTlafxw" title="office work - (Copyright free footage HD)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
 
-                    <div className="col-lg-6 mt-5">
-                        <div className="mt-5">
-                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/yRPTQTlafxw" title="office work - (Copyright free footage HD)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </div>
                 </div>
+
             </div>
+
+
 
         </>
     )
