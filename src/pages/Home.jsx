@@ -114,7 +114,7 @@ function Home() {
             <div className='container mt-5 mb-5'>
                 <div className="row">
                     <div className="col-md-6 ">
-                    <h1 className='fw-bolder ' style={{ fontSize: '70px' }}>Our approach.</h1>
+                    <h1 className='fw-bolder ' style={{ fontSize: '70px' }}>Our approach<span style={{ fontWeight: 'bold', color: 'green' }}>.</span></h1>
 
                         <p className='fs-5 mt-3 '>We recognise the lack of human-centric intelligence around the use of workspaces has created a disconnect, between individual employees, their organisational culture and their workspace. This coupled with the switch to hybrid working has left many organisations with too much space and the wrong space types.</p>           
                         <p className='fs-5 mt-5'>Our mission is ‘to empower the world’s largest businesses to achieve more, by reconnecting people, workspaces and activity’. </p>        

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Form, Button } from 'react-bootstrap';
+import { Form ,Card  } from 'react-bootstrap';
+
 function Contact() {
     return (
         <>
@@ -15,83 +16,70 @@ function Contact() {
             </div>
 
             <div className="container text-center mt-5 ">
-                <div className="row justify-content-center">
-                    <div className="col-md-4">
-                        <h5 className='fw-bolder fs-5'><i class="fa-solid fa-globe"></i> HOURS OF OPERATION</h5>
+                <div className="row justify-content-center ">
+                    <div className="col-md-4 border shadow w-25 me-3">
+                        <h5 className='fw-bolder fs-5 mt-3'><i class="fa-solid fa-globe"></i> HOURS OF OPERATION</h5>
                         <p>09:00 to 17:00, Mon to Fri(Excluding Holiday)</p>
                     </div>
-                    <div className="col-md-4">
-                        <h5 className='fw-bolder fs-5'><i class="fa-solid fa-phone"></i> PHONE</h5>
+                    <div className="col-md-4 border shadow me-3 ">
+                        <h5 className='fw-bolder fs-5 mt-3'><i class="fa-solid fa-phone"></i> PHONE</h5>
                         <p>+91 7654321098</p>
                     </div>
-                    <div className="col-md-4">
-                        <h5 className='fw-bolder fs-5'><i class="fa-regular fa-message"></i> GENERAL INQUIRIES</h5>
+                    <div className="col-md-4 shadow me-3">
+                        <h5 className='fw-bolder fs-5 mt-3'><i class="fa-regular fa-message"></i> GENERAL INQUIRIES</h5>
                         <p><a href="" style={{ color: 'black' }}> info.engagewith@gmail.com</a></p>
                     </div>
                 </div>
             </div>
 
-            <div className='container mt-3'>
+            
+            <div className='container mt-5 '>
                 <div className='text-center'>
-                    <h5 className='fw-bold'>Our Customer Service Team is Waiting To Assist You</h5>
+                    <h2 className='fw-bold'>Our Customer Service Team is Waiting To Assist You</h2>
                 </div>
-                <div className='text-center mt-4'>
-                    <h5 className=''>You Can also Check Your Social Media Profiles</h5>
-                </div>
-            </div>
 
-            <div className='container mt-4 mb-4' >
-                <div className="row">
-                    <div className="col-md-3"></div>
-                    <div className="col-md-6 text-center">
+          <div className='d-flex justify-content-center align-items-center container mt-3 mb-4 '>
+                <div className=" container row mt-4">
+                        <div className='col-md-2'></div>
+    
+                        <div className="col-md-4 ">
+                            <img src="https://th.bing.com/th/id/OIP.WvBbXywMTA6GzPBFc5T7yAHaHc?w=520&h=523&rs=1&pid=ImgDetMain" width={'100%'} height={'400px'} alt="" />
+                      
+                        </div>
 
-                        <h4 className='fw-bolder'>Any Queries</h4>
-                        <Form className='mt-2'>
-                            <Form.Group controlId="formName">
+                        
+    
+                        <div className="col-md-4   border shadow  bg-transparent" style={{backgroundImage:'https://th.bing.com/th/id/OIP.7qCRjA0qWwBSMabq0wtp0AAAAA?rs=1&pid=ImgDetMain'}}>
+                            <h4 className="mb-4 text-center mt-2">Any Queries</h4>
+                            <Card className="bg-transparent text-light w-100 mb-4 no-hover-effect">
+                                <Card.Body>
+                                    <Form>
+                                        <Form.Group className="mb-3">
+                                            <Form.Control type="text" placeholder="Enter Your Name" />
+                                        </Form.Group>
+                                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                                            <Form.Control type="email" placeholder="Enter your Email Id" />
+                                        </Form.Group>
+                                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                                            <Form.Control as="textarea" placeholder="Enter Message" />
+                                        </Form.Group>
+                                        <div className='text-center'>
+                                            <button className='btn btn-primary mt-2'>Submit</button>
+                                        </div>
+                                    </Form>
+                                </Card.Body>
+                            </Card>
+    
+                        </div>
+                        <div className='col-md-2'></div>
 
-                                <Form.Control
-                                    style={{ backgroundColor: '#F0F1F8' }}
-                                    type="text"
-                                    placeholder="Enter your name"
-                                    name="name"
-                                    className='mt-2'
-                                    required
-                                />
-                            </Form.Group>
-
-                            <Form.Group controlId="formEmail">
-
-                                <Form.Control
-                                    style={{ backgroundColor: '#F0F1F8' }}
-                                    type="email"
-                                    placeholder="Enter your email"
-                                    name="email"
-                                    className='mt-3'
-                                    required
-                                />
-                            </Form.Group>
-
-                            <Form.Group controlId="formMessage">
-
-                                <Form.Control
-                                    style={{ backgroundColor: '#F0F1F8' }}
-                                    as="textarea"
-                                    rows={3}
-                                    placeholder="Enter your message"
-                                    name="message"
-                                    className='mt-3'
-                                    required
-                                />
-                            </Form.Group>
-
-                            <Button variant="primary" type="submit" className='mt-3'>
-                                Submit
-                            </Button>
-                        </Form>
-                        <div className="col-md-3"></div>
                     </div>
-                </div>
+          </div>
+
+                
             </div>
+
+
         </>
 
 
