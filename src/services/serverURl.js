@@ -1,4 +1,4 @@
 
 
 
-export const serverURL = 'https://employee-details.onrender.com'
+export const serverURL = 'https://employee-management-backend-q0uv.onrender.com'
